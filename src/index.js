@@ -21,12 +21,7 @@ function getCatData(event) {
             <h1 class="name">${name}</h1>
             <p>${description}</p>
             <p><span class="temperament">Temperament: </span>${temperament}</p>
-        </div>`
-
-        console.log(description)
-        console.log(name)
-        console.log(temperament)
-        console.log(img)
+        </div>`       
     }).catch(() => {
     error.style.display = 'block';
 })
@@ -40,5 +35,5 @@ fetchBreeds().then(cats => {
         select.insertAdjacentHTML("beforeend", option);
    })
 }).catch(() => {
-    error.style.display = 'block';
-})
+    error.style.display = 'block'
+     })
